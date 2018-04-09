@@ -1,5 +1,5 @@
 @import "partial/reset";
-$main-color : #007abf;
+$main-color : #789f69;
 $padding-top : 40px;
 $padding-bottom :40px;
 $space-btw : 20px 0 20px 0;
@@ -238,7 +238,7 @@ $color-hover : #0d3347;
                       margin-right: 20px;
                       border-bottom: none;
                       a{
-                        color: #086b9e;
+                        color: $main-color;
                         &:hover{
                           margin-right: 0;
                           background-color: #fff;
@@ -258,9 +258,9 @@ $color-hover : #0d3347;
                 }
               }
               li.active a{
-                //margin-right: -10px;
+                margin-right: -10px;
                 background-color: #fff;
-                color: #086b9e;
+                color: $main-color;
               }
               li:last-child {
                 border-bottom: none !important;
@@ -302,7 +302,7 @@ $color-hover : #0d3347;
             margin: -1px;
             border-right: none;
             &:hover{
-              background-color: #007abf;
+              background-color: $main-color;
               a{
                 p.title{color: #f9f9ff;}
                 .icon{
@@ -367,7 +367,7 @@ $color-hover : #0d3347;
            font-size: 13px;
            display: block;
            text-align: center;
-           color: rgb(0, 97, 144);
+           color: $main-color;
            position: relative;
            padding: 8px;
            .text{
@@ -414,57 +414,206 @@ $color-hover : #0d3347;
 
 
   }
-}
-#footer-wrap{
-  background: url("../../images/main/footer.png") no-repeat;
-  background-size: 100%;
-  overflow: hidden;
-  .footer {
-    padding-top: 30px;
-    margin-top: 150px;
-    background-color: #069;
-    overflow: hidden;
-    .container {
-      .table{
-        display: table;
+  // =======================================================
+  @mixin post_item(){
+    .title{
+      border-bottom: 0!important;
+      padding: 10px 40px;
+      font-weight: 700;
+      font-size: 16px;
+      border-bottom: 3px solid #e1e1e1;
+      display: inline-block;
+      margin-bottom: 20px;
+      color: $main-color;
+    }
+    .row{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    .item-post{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      overflow: hidden;
+      text-align: center;
+      .img_p{
+        text-align: center;
+        line-height: 1.3em;
         width: 100%;
-        .td{display: table-cell;}
-        .title {
-          font-size: 14px;
-          color: rgb(255, 255, 255);
-          margin-bottom: 10px;
-          font-weight: bold;
-          display: block;
+        margin: 0 auto;
+        img{
+          width: 100%;
         }
-        ul{list-style-type: none;}
-        ul li{
-          padding: 5px 0;
-          a{
-            color: #f0efef;
-            line-height: 1.3;
-            text-decoration: none;
+      }
+      .detail_p{
+        text-align: left;
+        h3{ font-size: 18px;}
+        p{ font-size: 14px;  color: $main-color;}
+      }
+    }
+  }
+
+  //===========================================
+  .latest_ads{
+    @include space();
+    @include post_item();
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
+    border-bottom-color: #d1d1d1;
+    border-top-right-radius: 3px;
+    overflow: hidden;
+
+    .latest_post{
+
+    }
+  }
+
+
+//=======================================================
+
+  .location{
+
+    .container{
+      background: #fff;
+      border: 1px solid #e1e1e1;
+      box-shadow: 0 3px 3px 1px rgba(0,0,0,.05);
+      border-bottom-color: #d1d1d1;
+      border-top-right-radius: 3px;
+      position: relative;
+      overflow: hidden;
+      .title{
+        border-bottom: 0!important;
+        padding: 10px 40px;
+        font-weight: 700;
+        font-size: 16px;
+        border-bottom: 3px solid #e1e1e1;
+        display: inline-block;
+        margin-bottom: 20px;
+        color: $main-color;
+      }
+      ul{
+          margin: 15px 30px;
+          list-style: disc!important;
+          color: #777;
+       li {
+          width: 20%;
+          margin-top: 7px;
+          display: list-item !important;
+          float: left;
+         a{
+           color: #000;
+           font-size: 13px;
+           line-height: 2;
+           text-decoration: none;
+         }
+        }
+      }
+      ul.row{
+        &:before, &:after {
+          content: '';
+          display: table;
+        }
+      }
+
+    }
+  }
+
+}
+.footer-wrapper{
+  background-color: #1b1e21;
+
+  .footer-top{
+    background-color:#212529;
+    padding:30px 0 30px 0;
+    .foot-item{
+      overflow:hidden;
+      display:block;
+      padding:0 10px 0 0;
+      border-right: 1px solid $main-color;
+      .foot-con{
+        color:#818182db;
+        padding:10px;
+        h3{
+          color:$main-color;
+          font-size: 22px;
+          text-transform:  uppercase;
+        }
+        ul{ padding:15px;
+          li{
+            padding-bottom:10px;
+            font-size: 15px;
+            a{
+              color: #818182db;
+              text-decoration:none;
+              font-size: 15px;
+            }
           }
         }
-      }
+        ul.footul{ list-style: none; }
 
-    }
-    .copy-right {
-      margin-top: 20px;
-      padding: 8px;
-      border-top: 1px solid #015b88;
-      p{
-        color: #f0efef;
-        line-height: 1.3;
-        display: inline-block;
-        font-size: 11px;
       }
     }
-
-
-
-
   }
+  /*  ==================================*/
+  .foot-logo{
+    text-align:left;
+  }
+  .foot-logo img{
+    width: 50%;
+    line-height:0;
+  }
+  .foot-info{
+    overflow:hidden;
+    display:block;
+    text-align:  left;
+    margin-top:  20px;
+  }
+  .foot-info p{
+    color: #818182db;
+    line-height: 1.5em;
+    font-size: 15px;
+    font-weight:normal;
+  }
+  .footer-bottom{
+    background-color:#1b1e21;
+    padding:20px 0px 20px 0px;
+    overflow:hidden;
+    display:block;
+  }
+  .footer-bottom p{
+    color:#ced4da;
+    line-height:1.3em;
+    font-size: 14px;
+    padding:  0px;
+    margin: 0px;
+    float:left;
+  }
+  .foot-socail{
+    float:right;
+    overflow:hidden;
+  }
+  .foot-socail a{
+    float:left;
+    padding:0px 10px;
+    line-height:1.3em;
+    font-size: 15px;
+    color:#ced4da;
+  }
+  .foot-socail a:hover{
+    color:$main-color;
+  }
+  #profile,#services,#solution,#professional{
+    position: absolute;
+  }
+
 }
+
+
+
+
+
+
+
 
 
 
