@@ -1,0 +1,69 @@
+$background : #ebebeb;
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Global Style
+   ========================================================================== */
+html{
+  font-family: 'Exo', sans-serif;
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+  /*font-family: 'Open Sans', sans-serif ;*/
+  width:100%;
+  margin:0;
+  padding:0;
+  display:block;
+}
+body{
+  font-family: 'Exo', sans-serif;
+  /*font-family: 'Open Sans', sans-serif ;*/
+  text-align: left;
+  font-weight: normal;
+  color: #333; /* Set Default Content Color */
+  font-size: 14px; /* Set Default Font Size */
+  line-height: 1.5em; /* Set Default Line Height */
+  width:  100%;
+  background-color: $background;
+}
+
+/* Default Link Style
+   ========================================================================== */
+a,a:link{
+  color: red; /* Set Default Link Color */
+  text-decoration: underline;
+  outline: 0;
+  display: block;
+}
+a:hover,a:active{
+  text-decoration: none;
+}
+
+/* Fix Clear Float
+   ========================================================================== */
+.clearfix{
+  clear: both;
+  height: 0px;
+  width: 100%;
+  content: '';
+  background-color: transparent;
+}
+.clearfix:before, .clearfix:after{
+  clear: both;
+}
+
+/* Show/Hide PC & SP
+   ========================================================================== */
+.pc{display: block;}
+.sp{display: none;}
+
+@media(max-width: 640px){
+  .pc{display: none;}
+  .sp{display: block;}
+}
+
+/*=================*/

@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buy and Sell anything </title>
+    <link rel="shortcut icon" href="images/main/logo.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main/main.css">
+    <link rel="stylesheet" href="css/main/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+ 
+</head>
+<body>
+<div class="page-wrapper">
+    <header id="header-wrap">
+        <div class="header-top container">
+            <div class="row">
+                <div class="col-sm-3 logo"><img src="images/main/logo.png" alt=""></div>
+                <div class="col-sm-9 content-head">
+                    <div class="user-com">
+                        <nav>
+                            <ul>
+                                <li><a href=""><i class="fas fa-lock"></i>Login</a></li>
+                                <li><a href=""><i class="fas fa-user"></i>User</a></li>
+                                <li><a href=""><i class="fas fa-mouse-pointer"></i>How to Use</a></li>
+                                <li class="lang">
+                                    <a href="">EN</a><a href="">KH</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="search-block">
+                        <form id="search_no_suggest" action="#" role="form" method="get">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <input type="hidden" name="location" value="">
+                                    <input type="hidden" name="commune" value="">
+                                    <input type="hidden" name="district" value="">
+                                    <input type="text" name="q" value="" placeholder="What are you looking for..." id="search_box" class="form_control" autocomplete="off">
+                                    <div id="suggestion" style="width: 230px; top: 34px; display: none;"></div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <span class="select">
+                                        <select name="category" id="search_cate" class="form_control">
+                                            <option value="0">All Categories</option>
+                                            <option class="main-cat" value="mobile-phones-tablets">Phones &amp; Tablets</option>
+                                            <option class="sub-cat" value="phones-tablets">Phones, Tablets</option>
+                                        </select>
+                                    </span>
+                                    <span class="select">
+                                        <select id="search_loc" class="form_control" name="location">
+                                            <option value="0">All Locations</option>
+                                        </select>
+                                    </span>
+                                    <input class="btn btn_yellow" type="submit" value="Search">
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content-wrap container">
+        <div class="banner-advertise"><img src="images/main/banner.png" alt=""></div>
+        <div class="cat-list-item">
+
+            <div class="cat-info">
+                <div class="cat-choose">
+                    <button class="title btn btn_cat">
+                        <i class="fas fa-bars"></i> Choose category <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <h2>Welcome to khmer24.com, the biggest online market in Cambodia.</h2>
+                </div>
+                <div class="cat-list">
+                    <div id="cate">
+                        <nav>
+                            <ul class="main_cat">
+                                <li class="active">
+                                    <a class="maincat" href="#popuar_cateogories" title="Popular Categories"><i class="far fa-heart"></i> Popular Categories</a>
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="" title="Phones &amp; Tablets"><i class="far fa-heart"></i> Phones &amp; Tablets</a>
+                                    <div class="sub_cat">
+                                        <div class="list_sub_box">
+                                            <div class="left_box">
+                                                <a class="cat_title" href="#" title="Phones &amp; Tablets"><i class="icon-phone"></i> Phones &amp; Tablets</a>
+                                                <a class="viewall" href="#" title="View All">View All <span>»</span></a>
+                                                <div class="scroll-wrapper" style="position: relative;">
+                                                    <ul class="list_sub_cat" style="margin-bottom: 0px; margin-right: 0px; height: 75px;">
+                                                        <li><a href="" title="Phones, Tablets">Phones, Tablets</a></li>
+                                                        <li><a href="" title="Smart Watches">Smart Watches</a></li>
+                                                        <li><a href="" title="Phone Accessories">Phone Accessories</a></li>
+                                                        <li><a href="" title="Phone Numbers">Phone Numbers</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="" title="Computers &amp; Accessories"><i class="far fa-heart"></i> Computers &amp; Accessories</a>
+                                    <div class="sub_cat">
+                                        <div class="list_sub_box">
+                                            <div class="left_box">
+                                                <a class="cat_title" href="#" title="Phones &amp; Tablets"><i class="icon-phone"></i> Phones &amp; Tablets</a>
+                                                <a class="viewall" href="#" title="View All">View All <span>»</span></a>
+                                                <div class="scroll-wrapper" style="position: relative;">
+                                                    <ul class="list_sub_cat" style="margin-bottom: 0px; margin-right: 0px; height: 75px;">
+                                                        <li><a href="" title="Phones, Tablets">Phones, Tablets</a></li>
+                                                        <li><a href="" title="Smart Watches">Smart Watches</a></li>
+                                                        <li><a href="" title="Phone Accessories">Phone Accessories</a></li>
+                                                        <li><a href="" title="Phone Numbers">Phone Numbers</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="" title="Electronics &amp; Appliances"><i class="far fa-heart"></i> Electronics &amp; Appliances</a>
+                                    <div class="sub_cat">
+                                        <div class="list_sub_box">
+                                            <div class="left_box">
+                                                <a class="cat_title" href="#" title="Phones &amp; Tablets"><i class="icon-phone"></i> Phones &amp; Tablets</a>
+                                                <a class="viewall" href="#" title="View All">View All <span>»</span></a>
+                                                <div class="scroll-wrapper" style="position: relative;">
+                                                    <ul class="list_sub_cat" style="margin-bottom: 0px; margin-right: 0px; height: 75px;">
+                                                        <li><a href="" title="Phones, Tablets">Phones, Tablets</a></li>
+                                                        <li><a href="" title="Smart Watches">Smart Watches</a></li>
+                                                        <li><a href="" title="Phone Accessories">Phone Accessories</a></li>
+                                                        <li><a href="" title="Phone Numbers">Phone Numbers</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="" title="Phones &amp; Tablets"><i class="far fa-heart"></i> Phones &amp; Tablets</a>
+
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="" title="Computers &amp; Accessories"><i class="far fa-heart"></i> Computers &amp; Accessories</a>
+
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="" title="Electronics &amp; Appliances"><i class="far fa-heart"></i> Electronics &amp; Appliances</a>
+
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="" title="Phones &amp; Tablets"><i class="far fa-heart"></i> Phones &amp; Tablets</a>
+
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="https://www.khmer24.com/en/c-computer-and-accessories.html" title="Computers &amp; Accessories"><i class="far fa-heart"></i> Computers &amp; Accessories</a>
+                                    <div class="sub_cat">
+                                        <div class="list_sub_box">
+                                            <div class="left_box">
+                                                <a class="cat_title" href="https://www.khmer24.com/en/c-computer-and-accessories.html" title="Computers &amp; Accessories"><i class="icon-laptop"></i> Computers &amp; Accessories</a>
+                                                <a class="viewall" href="https://www.khmer24.com/en/c-computer-and-accessories.html" title="View All">View All <span>»</span></a>
+                                                <div class="scroll-wrapper list_sub_cat scrollbar-light row" style="position: relative;"><ul class="list_sub_cat scrollbar-light row scroll-content" style="margin-bottom: 0px; margin-right: 0px; height: 39px;">
+                                                    <li><a href="https://www.khmer24.com/en/c-computers.html" title="Computers">Computers</a></li>
+                                                    <li><a href="https://www.khmer24.com/en/c-computer-accessories.html" title="Computer accessories">Computer accessories</a></li>
+                                                    <li><a href="https://www.khmer24.com/en/c-softwares.html" title="Softwares">Softwares</a></li>
+                                                </ul><div class="scroll-element scroll-x"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar" style="width: 98px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer">    <div class="scroll-element_size"></div>    <div class="scroll-element_track"></div>    <div class="scroll-bar" style="height: 103px;"></div></div></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="" title="Electronics &amp; Appliances"><i class="far fa-heart"></i> Electronics &amp; Appliances</a>
+
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="" title="Phones &amp; Tablets"><i class="far fa-heart"></i> Phones &amp; Tablets</a>
+
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="" title="Computers &amp; Accessories"><i class="far fa-heart"></i> Computers &amp; Accessories</a>
+
+                                </li>
+                                <li class="">
+                                    <a class="maincat" href="" title="Electronics &amp; Appliances"><i class="far fa-heart"></i> Electronics &amp; Appliances</a>
+
+                                </li>
+
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="cat-item special">
+                    <section class="popular_cat">
+                        <h2 class="hide">Popular Categories</h2>
+                        <ul id="icon_cat" class="list-inline">
+                            <li>
+                                <a href="#">
+                                    <div class="icon "><span class="house-for-sale"><i class="fas fa-home"></i></span></div>
+                                    <p class="title">House for Sale</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon"><span class="landed-properties-for-sale"><i class="fas fa-globe"></i></span></div>
+                                    <p class="title">Land for Sale</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <span class="cars-for-sale.png"><i class="fas fa-car"></i></span>
+                                    </div>
+                                    <p class="title">Cars for Sale</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/cars/motorcycles-for-sale.html">
+                                    <div class="icon">
+                                        <span class="motorcycles-for-sale"><i class="fas fa-motorcycle"></i></span>
+                                    </div>
+                                    <p class="title">Motorcycles for Sale</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/mobiles/phones-tablets.html">
+                                    <div class="icon">
+                                        <span class="phones-tablets"><i class="fas fa-mobile-alt"></i></span>
+                                    </div>
+                                    <p class="title">Phones, Tablets</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/mobiles/phone-accessories.html">
+                                    <div class="icon">
+                                        <span class="phone-accessories"><i class="fas fa-headphones"></i></span>
+                                    </div>
+                                    <p class="title">Phone Accessories</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/mobiles/phone-numbers.html">
+                                    <div class="icon">
+                                        <span class="phone-numbers"><i class="fas fa-phone"></i></span>
+                                    </div>
+                                    <p class="title">Phone Numbers</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-computers.html">
+                                    <div class="icon">
+                                        <span class="computers"><i class="fas fa-laptop"></i></span>
+                                    </div>
+                                    <p class="title">Computers</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-computer-accessories.html">
+                                    <div class="icon">
+                                        <span class="computer-accessories"><i class="fas fa-keyboard"></i></span>
+                                    </div>
+                                    <p class="title">Computer accessories</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-cameras-camcorders.html">
+                                    <div class="icon">
+                                        <span class="cameras-camcorders"><i class="fas fa-camera"></i></span>
+                                    </div>
+                                    <p class="title">Cameras, camcorders</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-tvs-videos-and-audios.html">
+                                    <div class="icon">
+                                        <span class="tvs-videos-and-audios"><i class="fas fa-tv"></i></span>
+                                    </div>
+                                    <p class="title">TVs, Videos and Audios</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-home-appliances.html">
+                                    <div class="icon">
+                                        <span class="home-appliances"><i class="fas fa-video"></i></span>
+                                    </div>
+                                    <p class="title">Home appliances </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-clothing-accessories.html">
+                                    <div class="icon">
+                                        <span class="clothing-accessories"><i class="fas fa-clock"></i></span>
+                                    </div>
+                                    <p class="title">Clothing, accessories</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-jewellery-watches.html">
+                                    <div class="icon">
+                                        <span class="jewellery-watches"><i class="fas fa-clock"></i></span>
+                                    </div>
+                                    <p class="title">Jewelry, watches </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-beauty-healthcare-products.html">
+                                    <div class="icon">
+                                        <span class="beauty-healthcare-products"><i class="fas fa-clock"></i></span>
+                                    </div>
+                                    <p class="title">Beauty &amp; Healthcare</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-sports-equipment.html">
+                                    <div class="icon">
+                                        <span class="sports-equipment"><i class="fas fa-clock"></i></span>
+                                    </div>
+                                    <p class="title">Sports Equipment</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-furniture-decor.html">
+                                    <div class="icon">
+                                        <span class="furniture-decor"><i class="fas fa-clock"></i></span>
+                                    </div>
+                                    <p class="title">Furniture &amp; Decor</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/jobs.html">
+                                    <div class="icon">
+                                        <span class="jobs"><i class="fas fa-clock"></i></span>
+                                    </div>
+                                    <p class="title">Jobs</p>
+                                    <span class="new">New</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-pets.html">
+                                    <div class="icon">
+                                        <span class="jobs"><i class="fas fa-clock"></i></span>
+                                    </div>
+                                    <p class="title">Pets</p>
+                                    <span class="new">New</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.khmer24.com/en/c-foods.html">
+                                    <div class="icon">
+                                        <span class="jobs"><i class="fas fa-clock"></i></span>
+                                    </div>
+                                    <p class="title">Foods</p>
+                                    <span class="new">New</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="populoar_location">
+                            <div class="title"><div class="text">Popular Locations</div></div>
+                            <div class="list">
+                                <ul class="list-inline row">
+                                    <li class="">
+                                        <a href="https://www.khmer24.com/en/all-categories-in-province-phnom-penh.html">Phnom Penh</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="https://www.khmer24.com/en/all-categories-in-province-preah-sihanouk.html">Preah Sihanouk</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="https://www.khmer24.com/en/all-categories-in-province-kampong-cham.html">Kampong Cham</a>
+                                    </li>
+                                    <li class="big">
+                                        <a href="https://www.khmer24.com/en/all-categories-in-province-siem-reap.html">Siem Reap</a>
+                                    </li>
+                                    <li class="big">
+                                        <a href="https://www.khmer24.com/en/all-categories-in-province-battambang.html">Battambang</a>
+                                    </li>
+                                    <li class="big">
+                                        <a href="https://www.khmer24.com/en/all-categories-in-province-kandal.html">Kandal</a>
+                                    </li>
+                                    <li class="big">
+                                        <a href="https://www.khmer24.com/en/all-categories-in-province-banteay-meanchey.html">Banteay Meanchey</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="https://www.khmer24.com/en/all-categories-in-province-kampong-chhnang.html">Kampong Chhnang</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer-wrap">
+        <div class="footer">
+            <div class="container">
+                <div class="table">
+                    <div class="td">
+                        <span class="title">Follow Khmer24</span>
+                        <ul id="icon">
+                            <li><a href="https://www.facebook.com/khmer24.com" target="_blank" rel="nofollow"><span class="icon icon-facebook"></span> Facebook</a></li>
+                            <li><a href="#"><span class="icon icon-google_plus"></span> Google Plus</a></li>
+                        </ul>
+                    </div>
+                    <div class="td">
+                        <span class="title">Customer Service</span>
+                        <ul>
+                            <li><a href="https://www.khmer24.com/en/contact.html" title="Contact Us">Contact Us</a></li>
+                            <li><a href="https://www.khmer24.com/en/membership.html">Membership</a></li>
+                            <li><a href="https://www.khmer24.com/en/promote-ad.html">Promote Ad</a></li>
+                            <li><a href="https://www.khmer24.com/en/privacy-policy.html" title="Privacy Policy">Private Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="td">
+                        <span class="title">Useful Information</span>
+                        <ul>
+                            <li><a href="#">Safety Tip</a></li>
+                            <li><a href="https://www.khmer24.com/en/posting-rule.html">Ad Posting Rule</a></li>
+                            <li><a href="https://www.khmer24.com/en/help.html">របៀបប្រើ</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center copy-right">
+                <p>Copyright ©2015 <a href="https://www.khmer24.com/en/">KHMER24</a> (Cambodia). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/bootstrap/popper.min.js"></script>
+<script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="js/vendor/bootstrap/holder.min.js"></script>
+<script src="js/wow.min.js"></script>
+
+<script>
+      new WOW().init();
+</script>
+<script src="js/main.js"></script>
+<script>
+$(document).ready(function () {
+    $('ul.main_cat > li').hover(
+        function(){
+            $(this).toggleClass('active').siblings().removeClass('active');;
+        }
+    );
+})
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
