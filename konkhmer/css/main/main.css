@@ -156,7 +156,7 @@ a:hover, a:active {
       margin: 0; }
 
 .content-wrap {
-  padding: 40px 0 40px 0;
+  padding: 20px 0 20px 0;
   overflow: hidden;
   display: block;
   width: 100%;
@@ -278,7 +278,7 @@ a:hover, a:active {
         width: 80%;
         border: 1px solid #939b9f6b;
         border-left: none;
-        padding-bottom: 14px;
+        padding-bottom: 4px;
         margin-top: -1px; }
         .content-wrap .cat-list-item .cat-info .cat-item .hide {
           display: none; }
@@ -368,21 +368,26 @@ a:hover, a:active {
               position: absolute;
               top: 18px;
               left: 0; }
-          .content-wrap .cat-list-item .cat-info .cat-item .populoar_location ul.list-inline {
-            margin-top: 10px; }
-            .content-wrap .cat-list-item .cat-info .cat-item .populoar_location ul.list-inline li {
-              width: 25%;
-              float: left;
-              font-size: 13px;
-              vertical-align: top;
-              height: 37px; }
-              .content-wrap .cat-list-item .cat-info .cat-item .populoar_location ul.list-inline li:before, .content-wrap .cat-list-item .cat-info .cat-item .populoar_location ul.list-inline li:after {
-                content: '';
-                display: table; }
-              .content-wrap .cat-list-item .cat-info .cat-item .populoar_location ul.list-inline li a {
-                padding: 5px 0;
-                color: #333; }
-  .content-wrap .latest_ads {
+          .content-wrap .cat-list-item .cat-info .cat-item .populoar_location .list {
+            overflow: hidden; }
+            .content-wrap .cat-list-item .cat-info .cat-item .populoar_location .list ul.row {
+              margin-right: 0 !important;
+              margin-left: 0 !important; }
+            .content-wrap .cat-list-item .cat-info .cat-item .populoar_location .list ul.list-inline {
+              margin-top: 10px; }
+              .content-wrap .cat-list-item .cat-info .cat-item .populoar_location .list ul.list-inline li {
+                width: 25%;
+                float: left;
+                font-size: 13px;
+                vertical-align: top;
+                height: 37px; }
+                .content-wrap .cat-list-item .cat-info .cat-item .populoar_location .list ul.list-inline li:before, .content-wrap .cat-list-item .cat-info .cat-item .populoar_location .list ul.list-inline li:after {
+                  content: '';
+                  display: table; }
+                .content-wrap .cat-list-item .cat-info .cat-item .populoar_location .list ul.list-inline li a {
+                  padding: 5px 0;
+                  color: #333; }
+  .content-wrap .latest_ads, .content-wrap .popular_ads, .content-wrap .feature_ads {
     margin: 20px 0 20px 0;
     overflow: hidden;
     display: block;
@@ -391,37 +396,48 @@ a:hover, a:active {
     border: 1px solid #e1e1e1;
     box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
     border-bottom-color: #d1d1d1;
-    border-top-right-radius: 3px;
-    overflow: hidden; }
-    .content-wrap .latest_ads .title {
-      border-bottom: 0 !important;
-      padding: 10px 40px;
-      font-weight: 700;
-      font-size: 16px;
-      border-bottom: 3px solid #e1e1e1;
-      display: inline-block;
-      margin-bottom: 20px;
-      color: #789f69; }
-    .content-wrap .latest_ads .row {
+    border-top-right-radius: 3px; }
+    .content-wrap .latest_ads .btn-primary, .content-wrap .popular_ads .btn-primary, .content-wrap .feature_ads .btn-primary {
+      color: #fff;
+      background-color: #789f69;
+      border-color: #789f69; }
+    .content-wrap .latest_ads .btn, .content-wrap .popular_ads .btn, .content-wrap .feature_ads .btn {
+      border-radius: 0; }
+    .content-wrap .latest_ads .title, .content-wrap .popular_ads .title, .content-wrap .feature_ads .title {
+      font-weight: bold;
+      font-size: 20px;
+      display: block;
+      text-align: center;
+      color: #789f69;
+      position: relative;
+      padding: 2px; }
+      .content-wrap .latest_ads .title .text, .content-wrap .popular_ads .title .text, .content-wrap .feature_ads .title .text {
+        display: inline-block;
+        padding: 0 15px;
+        background: #fff;
+        position: relative; }
+    .content-wrap .latest_ads .row, .content-wrap .popular_ads .row, .content-wrap .feature_ads .row {
       margin-left: 0 !important;
       margin-right: 0 !important; }
-    .content-wrap .latest_ads .item-post {
-      padding-top: 30px;
-      padding-bottom: 30px;
+    .content-wrap .latest_ads .item-post, .content-wrap .popular_ads .item-post, .content-wrap .feature_ads .item-post {
+      padding-top: 20px;
+      padding-bottom: 20px;
       overflow: hidden;
-      text-align: center; }
-      .content-wrap .latest_ads .item-post .img_p {
+      text-align: center;
+      margin-top: 5px; }
+      .content-wrap .latest_ads .item-post .img_p, .content-wrap .popular_ads .item-post .img_p, .content-wrap .feature_ads .item-post .img_p {
         text-align: center;
         line-height: 1.3em;
         width: 100%;
-        margin: 0 auto; }
-        .content-wrap .latest_ads .item-post .img_p img {
-          width: 100%; }
-      .content-wrap .latest_ads .item-post .detail_p {
+        margin: 0 auto;
+        height: 200px; }
+        .content-wrap .latest_ads .item-post .img_p img, .content-wrap .popular_ads .item-post .img_p img, .content-wrap .feature_ads .item-post .img_p img {
+          line-height: 0; }
+      .content-wrap .latest_ads .item-post .detail_p, .content-wrap .popular_ads .item-post .detail_p, .content-wrap .feature_ads .item-post .detail_p {
         text-align: left; }
-        .content-wrap .latest_ads .item-post .detail_p h3 {
+        .content-wrap .latest_ads .item-post .detail_p h3, .content-wrap .popular_ads .item-post .detail_p h3, .content-wrap .feature_ads .item-post .detail_p h3 {
           font-size: 18px; }
-        .content-wrap .latest_ads .item-post .detail_p p {
+        .content-wrap .latest_ads .item-post .detail_p p, .content-wrap .popular_ads .item-post .detail_p p, .content-wrap .feature_ads .item-post .detail_p p {
           font-size: 14px;
           color: #789f69; }
   .content-wrap .location .container {

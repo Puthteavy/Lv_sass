@@ -1,7 +1,7 @@
 @import "partial/reset";
 $main-color : #789f69;
-$padding-top : 40px;
-$padding-bottom :40px;
+$padding-top : 20px;
+$padding-bottom :20px;
 $space-btw : 20px 0 20px 0;
 $color-hover : #0d3347;
 @mixin clearFix{
@@ -281,7 +281,7 @@ $color-hover : #0d3347;
         width: 80%;
         border: 1px solid #939b9f6b;
         border-left: none;
-        padding-bottom: 14px;
+        padding-bottom: 4px;
         margin-top: -1px;
 
         .hide {
@@ -339,6 +339,7 @@ $color-hover : #0d3347;
               }
 
             }
+
             .new{
               position: absolute;
               font-size: 10px;
@@ -351,6 +352,7 @@ $color-hover : #0d3347;
               background-color: #de9907;
               -webkit-animation: random 5s infinite;
               animation: random 5s infinite;
+
               &:before{
                 content: '';
                 display: block;
@@ -391,28 +393,28 @@ $color-hover : #0d3347;
              left: 0;
            }
          }
-          ul.list-inline{
-            margin-top: 10px;
-
-            li{
-              width: 25%;
-              float: left;
-              font-size: 13px;
-              vertical-align: top;
-              height: 37px;
-              &:before, &:after {
-                content: '';
-                display: table;
+          .list{
+            overflow: hidden;
+            ul.row{
+              margin-right: 0 !important;
+              margin-left: 0 !important;
+            }
+            ul.list-inline{
+              margin-top: 10px;
+              li{
+                width: 25%;
+                float: left;
+                font-size: 13px;
+                vertical-align: top;
+                height: 37px;
+                &:before, &:after {
+                  content: '';
+                  display: table;
+                }
+                a{  padding: 5px 0;  color: #333;  }
               }
-              a{
-                padding: 5px 0;
-                color: #333;
-
-              }
-
             }
           }
-
         }
       }
     }
@@ -421,32 +423,50 @@ $color-hover : #0d3347;
   }
   // =======================================================
   @mixin post_item(){
-    .title{
-      border-bottom: 0!important;
-      padding: 10px 40px;
-      font-weight: 700;
-      font-size: 16px;
-      border-bottom: 3px solid #e1e1e1;
-      display: inline-block;
-      margin-bottom: 20px;
-      color: $main-color;
+    .btn-primary {
+      color: #fff;
+      background-color: #789f69;
+      border-color: #789f69;
     }
+    .btn{
+      border-radius: 0;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+      display: block;
+      text-align: center;
+      color: $main-color;
+      position: relative;
+      padding: 2px;
+      .text{
+        display: inline-block;
+        padding: 0 15px;
+        background: #fff;
+        position: relative;
+      }
+
+    }
+
     .row{
       margin-left: 0 !important;
       margin-right: 0 !important;
     }
     .item-post{
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       overflow: hidden;
       text-align: center;
+      margin-top: 5px;
+
       .img_p{
         text-align: center;
         line-height: 1.3em;
         width: 100%;
         margin: 0 auto;
+        height:200px;
         img{
-          width: 100%;
+          line-height: 0;
         }
       }
       .detail_p{
@@ -456,22 +476,23 @@ $color-hover : #0d3347;
       }
     }
   }
-
-  //===========================================
-  .latest_ads{
-    @include space();
-    @include post_item();
+  @mixin border_shadow(){
     background: #fff;
     border: 1px solid #e1e1e1;
     box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
     border-bottom-color: #d1d1d1;
     border-top-right-radius: 3px;
-    overflow: hidden;
-
+  }
+  //===========================================
+  .latest_ads,.popular_ads,.feature_ads{
+    @include space();
+    @include post_item();
+    @include border_shadow();
     .latest_post{
-
+      //@include clearFix();
     }
   }
+
 
 
 //=======================================================
