@@ -163,7 +163,8 @@ a:hover, a:active {
   margin: 0; }
   .content-wrap .banner-advertise {
     text-align: center;
-    line-height: 0; }
+    line-height: 0;
+    overflow: hidden; }
     .content-wrap .banner-advertise img {
       line-height: 0; }
   .content-wrap .cat-list-item {
@@ -218,6 +219,8 @@ a:hover, a:active {
             .content-wrap .cat-list-item .cat-info .cat-list #cate nav ul.main_cat li a:hover {
               margin-right: -10px;
               background-color: #fff; }
+            .content-wrap .cat-list-item .cat-info .cat-list #cate nav ul.main_cat li a i {
+              padding-right: 10px; }
           .content-wrap .cat-list-item .cat-info .cat-list #cate nav ul.main_cat li:hover .sub_cat {
             display: block; }
           .content-wrap .cat-list-item .cat-info .cat-list #cate nav ul.main_cat li .sub_cat {

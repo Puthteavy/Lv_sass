@@ -131,6 +131,7 @@ $color-hover : #0d3347;
   .banner-advertise{
     text-align: center;
     line-height: 0;
+    overflow: hidden;
     img{
       line-height:0;
     }
@@ -189,6 +190,10 @@ $color-hover : #0d3347;
                     margin-right: -10px;
                     background-color: #fff;
 
+
+                  }
+                  i{
+                    padding-right: 10px;
                   }
 
                 }
