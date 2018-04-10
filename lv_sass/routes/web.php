@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('FrontEnd.index');
 });
+Route::group(['namespace'=>'backend','prefix'=>'admin'],function (){
+
+    //============post =================
+
+    Route::get('/dashboard','PostController@index');
+
+    //=====================================================
+
+});
